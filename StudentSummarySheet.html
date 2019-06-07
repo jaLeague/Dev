@@ -8,18 +8,26 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
    h2   {color: black;}
-    
+
+   pre {
+     display: block;
+     font-family: monospace;
+     white-space: pre;
+     margin: 1em 0;
+   }
+
+
    #moduleIndex {
    padding: 0;
-}
+  }
 </style>
 <script src="https://league-central.github.io/curriculum/script/headerAndFooter.js"></script>
 <body>
         <div id ="wrap">
             <div id ="main">
 
-                <div id = "moduleIndex">   
-    
+                <div id = "moduleIndex">
+
 
 <img alt="" src="images/league%20logo.jpg" style="width: 200.00px; height: 207.00px;  margin: 0px 20px" align="left" title=""><br>
 <h1>Student Portfolio</h1><p class="normal">
@@ -27,69 +35,25 @@
                    <br><h2>Josh Pryor</h2>
     <br><br><br>
 <p class="normal">
-Date enrolled: <br>
-
+Enrolled since:  August, 2016<br>
+Student status: Active
+</p>
 <pre>
-Levels Passed    
-    
-Level 1         February, 2019
-Level 0         December, 2017
-Introduction Workshop   August, 2016
-    
- </pre>   
-</p><br>
-    <pre>	PImage pictureOfRecord;                        //as member variable
-        size(600,600);                                 //in setup method
-        pictureOfRecord= loadImage("record.png");      //in setup method
-        image(pictureOfRecord, xPosition, yPosition);  //in draw method</pre>
-<br>
-<p class="normal">    
-    2. Set the size of your image to match the size of your canvas (after you have loaded it).</p>
-    <pre>        pictureOfRecord.resize(height,width);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//in setup method</pre>
-<br>
-<p class="normal">
-3. Use this method to rotate your image. Make sure you use the image() command after you call rotateImage().</p>
-    <pre>   void rotateImage(PImage image, int amountToRotate) {
-        translate(width/2, height/2);
-        rotate(amountToRotate*TWO_PI/360);
-        translate(-image.width/2, -image.height/2);
-    }</pre><br>
-<p class="normal">
-    5. Adjust the speed of the record player. Make the record spin.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Make a variable to keep track of the image angle.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) Increase this variable in the draw method.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii) Use this variable when you call the rotateImage() method.<br>
-    </p><br>
-<p class="normal">
-6. Only spin the record when the user clicks the mouse button. Hint: use <font color="magenta">mousePressed</font>
-    </p><br>
-<p class="normal">    
-7. Add a song.  First drop the song file (ex. awesomeTrack.mp3) onto your sketch.
-</p>
-    <pre> 	import ddf.minim.*;	 	        //at the very top of your sketch
-	Minim minim;				//as a member variable
-	AudioPlayer song;			//as a member variable
-	minim = new Minim(this);		//in the setup method
-	song = minim.loadFile("awesomeTrack.mp3", 512);   //in the setup method</pre>
-	<br>
-<p class="normal">
-8. Only play the song when the mouse is pressed. Hint: use the methods below.
-</p>
-    <pre>	song.play()
-	song.pause()</pre><br>
-<p class="normal">
-9. Make the record spin as fast as possible
-    </p><br>
+Level       Level                            Date Passed          UCSD Extension
+Passed      Content                                               Credits Earned
 
+Level 1     Objects & Methods                February, 2019             5.0
+Level 0     Loops, Logic & Variables         December, 2017             1.5
+            Introduction Workshop            August, 2016
 
-<a href="https://processing.org/reference">
-    <img src="https://league-level0.github.io/p3logo.jpeg" class="footer" alt="Processing Reference"></a>
+</pre>
+
 
                 </div>
     </div>
-    </div>                
+    </div>
         </div>
-    </body>                
+    </body>
 <div id="footer">
 <script>addFooter();</script>
 </div>
